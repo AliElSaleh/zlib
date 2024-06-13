@@ -10,6 +10,8 @@ SourceDirectory        test
 
 IncludedSourceFiles    %(test).c
 
+Includes               .
+
 Libraries              zS
 LibraryDirectories     bin
 

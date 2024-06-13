@@ -10,6 +10,7 @@ SourceDirectory        examples
 
 IncludedSourceFiles    %(program).c
 
+Includes               .
 Defines                TEST
 
 Libraries              zS
