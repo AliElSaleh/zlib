@@ -1,0 +1,26 @@
+AssertCmdVarExists     program
+AssertWorkingDirectory ..
+
+Assembly %program
+Type     app
+
+BuildDirectory         bin/examples
+IntermediateDirectory  int/examples
+SourceDirectory        examples
+
+IncludedSourceFiles    %(program).c
+
+Defines                TEST
+
+Libraries              zS
+LibraryDirectories     bin
+
+if run RunAssembly
+
+program.errormessage {
+    The value of "program" is equal to any of the .c files (excluding extension) 
+    inside of the examples/ directory.
+    
+    For example: riftbuild example.build program=enough
+                 riftbuild example.build program=enough run
+}

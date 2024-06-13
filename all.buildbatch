@@ -1,0 +1,16 @@
+# build zlib library (static and shared)
+zlib.build
+
+# build example programs
+example.build run program=enough
+example.build run program=fitblk
+example.build     program=gun
+example.build run program=gzappend
+example.build run program=gzjoin
+example.build     program=gznorm
+example.build     program=zpipe
+example.build run program=zran
+
+# build test programs
+test.build run test=example
+test.build     test=minigzip
