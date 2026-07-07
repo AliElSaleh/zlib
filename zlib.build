@@ -1,10 +1,10 @@
 Assembly z
-Type lib
-Version! 1.3.1.1
+Type     lib
+Version  1.3.1.1
 
 BuildDirectory            bin
 IntermediateDirectory     int
 
-ExcludedSourceDirectories *
+SourceDirectories.Exclude  *
 
-Defines                   _LARGEFILE64_SOURCE=1 HAVE_SYS_TYPES_H HAVE_STDINT_H HAVE_STDDEF_H
+Compiler.Defines           _LARGEFILE64_SOURCE=1 HAVE_SYS_TYPES_H HAVE_STDINT_H HAVE_STDDEF_H
